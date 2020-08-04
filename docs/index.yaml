@@ -1,0 +1,18 @@
+apiVersion: v1
+entries:
+  kommander-license:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2020-08-03T22:55:45.282914-05:00"
+    description: Installs kommander-license
+    digest: 25bd9437422b0a6bf1761a70ff1c7f6378737f1ea7785c9dec54546b01cb3eb6
+    home: https://github.com/cmays20/se-addons
+    maintainers:
+    - email: cmays@d2iq.com
+      name: cmays
+    name: kommander-license
+    tillerVersion: '>=2.14.2'
+    urls:
+    - https://cmays20.github.io/se-addons/kommander-license-1.0.0.tgz
+    version: 1.0.0
+generated: "2020-08-03T22:55:45.282328-05:00"
