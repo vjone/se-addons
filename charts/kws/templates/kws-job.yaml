@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: kws-setup
+  namespace: kws
+spec:
+  template:
+    spec:
+      containers:
+      - name: kws-config
+        image: vjone/kws:1.0
+        command: ["/tmp/kommander-env-setup/start.sh"]
+        #command: ["sleep"]
+        #args: ["100000000000"]
+      restartPolicy: Never
+  backoffLimit: 4
