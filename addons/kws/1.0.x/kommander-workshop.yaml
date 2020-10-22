@@ -15,6 +15,6 @@ spec:
         kubeaddons.mesosphere.io/name: kommander
   chartReference:
     chart: kommander-workshop
-    repo: https://vjone.github.io/se-addons
+    repo: https://github.com/vjone/se-addons/charts/kws
     version: 1.0.0
     
