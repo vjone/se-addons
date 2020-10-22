@@ -5,7 +5,7 @@ metadata:
   name: kommander-license
   annotations:
     catalog.kubeaddons.mesosphere.io/addon-revision: "1.0.0"
-    values.chart.helm.kubeaddons.mesosphere.io/kommander-license: "https://raw.githubusercontent.com/cmays20/se-addons/master/charts/kommander-license/values.yaml"
+    values.chart.helm.kubeaddons.mesosphere.io/kommander-license: "https://raw.githubusercontent.com/vjone/se-addons/master/charts/kommander-license/values.yaml"
 spec:
   namespace: kubeaddons
   kubernetes: 
@@ -15,6 +15,6 @@ spec:
         kubeaddons.mesosphere.io/name: kommander
   chartReference:
     chart: kommander-license
-    repo: https://cmays20.github.io/se-addons
+    repo: https://vjone.github.io/se-addons
     version: 1.0.0
     

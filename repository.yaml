@@ -5,5 +5,5 @@ metadata:
   name: se-addons
 spec:
   priority: "1"
-  url: "https://github.com/cmays20/se-addons"
+  url: "https://github.com/vjone/se-addons"
   ref: "master"

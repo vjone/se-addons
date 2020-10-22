@@ -4,7 +4,7 @@ description: Installs kommander-license
 name: kommander-license
 version: "1.0.0"
 tillerVersion: ">=2.14.2"
-home: https://github.com/cmays20/se-addons
+home: https://github.com/vjone/se-addons
 maintainers:
 - email: cmays@d2iq.com
   name: cmays

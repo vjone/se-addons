@@ -5,9 +5,9 @@ metadata:
   name: kommander-workshop
   annotations:
     catalog.kubeaddons.mesosphere.io/addon-revision: "1.0.0"
-    values.chart.helm.kubeaddons.mesosphere.io/kommander-workshop: "https://raw.githubusercontent.com/cmays20/se-addons/master/charts/kws/values.yaml"
+    values.chart.helm.kubeaddons.mesosphere.io/kommander-workshop: "https://raw.githubusercontent.com/vjone/se-addons/master/charts/kws/values.yaml"
 spec:
-  namespace: kubeaddons
+  namespace: kws
   kubernetes: 
     minSupportedVersion: v1.15.6
   requires:
@@ -15,6 +15,6 @@ spec:
         kubeaddons.mesosphere.io/name: kommander
   chartReference:
     chart: kommander-workshop
-    repo: https://cmays20.github.io/se-addons
+    repo: https://vjone.github.io/se-addons
     version: 1.0.0
     

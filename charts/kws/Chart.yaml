@@ -4,7 +4,7 @@ description: Sets Up and Configures the Kommander Cluster for a SE Kommander Wor
 name: kommander-workshop
 version: "1.0.0"
 tillerVersion: ">=2.14.2"
-home: https://github.com/cmays20/se-addons
+home: https://github.com/vjone/se-addons
 maintainers:
 - email: vjone@d2iq.com
   name: vjone
