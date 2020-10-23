@@ -1,0 +1,42 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: kommander-workshop-setup
+  namespace: kommander-workshop
+spec:
+  template:
+    spec:
+      containers:
+      - name: kws-config
+        image: vjone/kws:1.0
+        command: ["/tmp/kommander-env-setup/start.sh"]
+        #command: ["sleep"]
+        #args: ["100000000000"]
+      restartPolicy: Never
+  backoffLimit: 4
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: defaultkwsadmin
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: default
+  namespace: kommander-workshop
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: rb_admin_workshopadmin
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: User
+  name: workshopadmin

@@ -3,9 +3,9 @@ entries:
   kommander-license:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: 2020-10-23T11:28:40.482907-07:00
+    created: 2020-10-23T11:45:08.820254-07:00
     description: Installs kommander-license
-    digest: a4574fc3dd4af272d7d859d0aa9214fd68bc08714eeeb2b965d6fa863cdf9bd9
+    digest: 7e17cc52e0e78ea25f3917bede161dee7b12c6ba54f64fd549ed8affba22f999
     home: https://github.com/vjone/se-addons
     maintainers:
     - email: cmays@d2iq.com
@@ -18,9 +18,9 @@ entries:
   kommander-workshop:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: 2020-10-23T11:28:40.483157-07:00
+    created: 2020-10-23T11:45:08.820533-07:00
     description: Sets Up and Configures the Kommander Cluster for a SE Kommander Workshop
-    digest: 88550506148dc5a832e61371377f432f25f5af674da917ab78ba777b00c98f48
+    digest: 4805b1982034958993a681752ff36b2b564c4c443251e592e51a5eee68daed42
     home: https://github.com/vjone/se-addons
     maintainers:
     - email: vjone@d2iq.com
@@ -30,4 +30,4 @@ entries:
     urls:
     - kommander-workshop-1.0.0.tgz
     version: 1.0.0
-generated: 2020-10-23T11:28:40.476616-07:00
+generated: 2020-10-23T11:45:08.819114-07:00

@@ -1,0 +1,20 @@
+---
+apiVersion: kubeaddons.mesosphere.io/v1beta1
+kind: ClusterAddon
+metadata:
+  name: kommander-workshop
+  annotations:
+    catalog.kubeaddons.mesosphere.io/addon-revision: "1.0.0"
+    values.chart.helm.kubeaddons.mesosphere.io/kommander-workshop: "https://raw.githubusercontent.com/vjone/se-addons/master/charts/kws/values.yaml"
+spec:
+  namespace: kommander-workshop
+  kubernetes: 
+    minSupportedVersion: v1.15.6
+  requires:
+    - matchLabels:
+        kubeaddons.mesosphere.io/name: kommander
+  chartReference:
+    chart: kommander-workshop
+    repo: https://vjone.github.io/se-addons
+    version: 1.0.0
+    
