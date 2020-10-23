@@ -1,0 +1,20 @@
+---
+apiVersion: kubeaddons.mesosphere.io/v1beta1
+kind: ClusterAddon
+metadata:
+  name: openldap
+  annotations:
+    catalog.kubeaddons.mesosphere.io/addon-revision: "1.0.0"
+    values.chart.helm.kubeaddons.mesosphere.io/kommander-workshop: "https://raw.githubusercontent.com/helm/charts/master/stable/openldap/values.yaml"
+spec:
+  namespace: kommander-workshop
+  kubernetes: 
+    minSupportedVersion: v1.15.6
+  requires:
+    - matchLabels:
+        kubeaddons.mesosphere.io/name: kommander
+  chartReference:
+    chart: openldap
+    repo: https://github.com/helm/charts/tree/master/stable/openldap
+    version: 1.2.5
+    
