@@ -3,7 +3,7 @@ entries:
   kommander-license:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2020-08-03T22:55:45.282914-05:00"
+    created: 2020-10-23T10:24:33.52241-07:00
     description: Installs kommander-license
     digest: 25bd9437422b0a6bf1761a70ff1c7f6378737f1ea7785c9dec54546b01cb3eb6
     home: https://github.com/cmays20/se-addons
@@ -13,6 +13,21 @@ entries:
     name: kommander-license
     tillerVersion: '>=2.14.2'
     urls:
-    - https://cmays20.github.io/se-addons/kommander-license-1.0.0.tgz
+    - kommander-license-1.0.0.tgz
     version: 1.0.0
-generated: "2020-08-03T22:55:45.282328-05:00"
+  kommander-workshop:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: 2020-10-23T10:24:33.522734-07:00
+    description: Sets Up and Configures the Kommander Cluster for a SE Kommander Workshop
+    digest: f3b2f2acbf6b5bb492ef28ab538acf850d7ddc66deeae8ec2ca54c8e4d2703fe
+    home: https://github.com/vjone/se-addons
+    maintainers:
+    - email: vjone@d2iq.com
+      name: vjone
+    name: kommander-workshop
+    tillerVersion: '>=2.14.2'
+    urls:
+    - kommander-workshop-1.0.0.tgz
+    version: 1.0.0
+generated: 2020-10-23T10:24:33.521529-07:00
