@@ -40,3 +40,44 @@ subjects:
 - apiGroup: rbac.authorization.k8s.io
   kind: User
   name: workshopadmin
+---
+apiVersion: v1
+kind: Secret
+type: Opaque
+data:
+  password: YWRtaW4=
+metadata:
+  name: ldap-idp-bindsecret
+  labels:
+    kommanderType: connectorSecret
+  namespace: kubeaddons
+---
+apiVersion: dex.mesosphere.io/v1alpha1
+kind: Connector
+metadata:
+  name: ldap-idp
+  namespace: kubeaddons
+spec:
+  type: ldap
+  displayName: d2iq.lab
+  enabled: true
+  ldap:
+    bindDN: cn=admin,dc=d2iq,dc=lab
+    bindSecretRef:
+      name: ldap-idp-bindsecret
+    host: openldap-kubeaddons.kommander-workshop.svc.cluster.local:389
+    insecureNoSSL: true
+    insecureSkipVerify: false
+    startTLS: false
+    userSearch:
+      baseDN: ou=users,dc=d2iq,dc=lab
+      username: uid
+      emailAttr: mail
+      idAttr: uid
+      scope: sub
+    groupSearch:
+      baseDN: ou=groups,dc=d2iq,dc=lab
+      filter: \"(objectClass=posixGroup)\"
+      userAttr: uid
+      groupAttr: memberUid
+      nameAttr: cn
