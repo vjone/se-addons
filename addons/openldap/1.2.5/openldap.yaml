@@ -3,6 +3,8 @@ apiVersion: kubeaddons.mesosphere.io/v1beta1
 kind: ClusterAddon
 metadata:
   name: openldap
+  labels:
+    kubeaddons.mesosphere.io/name: openldap
   annotations:
     catalog.kubeaddons.mesosphere.io/addon-revision: "1.0.0"
     values.chart.helm.kubeaddons.mesosphere.io/kommander-workshop: "https://raw.githubusercontent.com/helm/charts/master/stable/openldap/values.yaml"
