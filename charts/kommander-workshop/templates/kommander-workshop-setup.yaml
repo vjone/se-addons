@@ -77,7 +77,7 @@ spec:
       scope: sub
     groupSearch:
       baseDN: ou=groups,dc=d2iq,dc=lab
-      filter: \"(objectClass=posixGroup)\"
+      filter: (objectClass=posixGroup)
       userAttr: uid
       groupAttr: memberUid
       nameAttr: cn

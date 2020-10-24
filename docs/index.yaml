@@ -3,7 +3,7 @@ entries:
   kommander-license:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: 2020-10-23T17:40:43.855209-07:00
+    created: 2020-10-23T18:15:42.842768-07:00
     description: Installs kommander-license
     digest: 07e533a562cde8e73bb822e6e32e1955d431ac4e48f6bdc27eb1bf03e2824cf2
     home: https://github.com/vjone/se-addons
@@ -18,9 +18,9 @@ entries:
   kommander-workshop:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: 2020-10-23T17:40:43.855604-07:00
+    created: 2020-10-23T18:15:42.843016-07:00
     description: Sets Up and Configures the Kommander Cluster for a SE Kommander Workshop
-    digest: 47bec2465a4bc8c9d359bd9727a328b525aca7e8af24d7789f94703cba6ea878
+    digest: 3ec5651b344dd928b2f32642b6960b349e78df16c3106a110541555ee842e2ca
     home: https://github.com/vjone/se-addons
     maintainers:
     - email: vjone@d2iq.com
@@ -33,7 +33,7 @@ entries:
   openldap:
   - apiVersion: v1
     appVersion: 2.4.48
-    created: 2020-10-23T17:40:43.856064-07:00
+    created: 2020-10-23T18:15:42.84349-07:00
     description: Community developed LDAP software
     digest: 68ea324a7d48368dcc6fc613a9c202d883119318b49180f5a83df6c911e10425
     engine: gotpl
@@ -49,4 +49,4 @@ entries:
     urls:
     - openldap-1.2.5.tgz
     version: 1.2.5
-generated: 2020-10-23T17:40:43.854081-07:00
+generated: 2020-10-23T18:15:42.8423-07:00
