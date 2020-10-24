@@ -5,7 +5,7 @@ metadata:
   name: openldap
   annotations:
     catalog.kubeaddons.mesosphere.io/addon-revision: "1.0.0"
-    values.chart.helm.kubeaddons.mesosphere.io/kommander-workshop: "https://raw.githubusercontent.com/vjone/se-addons/master/charts/openldap/values.yaml"
+    values.chart.helm.kubeaddons.mesosphere.io/kommander-workshop: "https://raw.githubusercontent.com/helm/charts/master/stable/openldap/values.yaml"
 spec:
   namespace: kommander-workshop
   kubernetes: 
@@ -15,6 +15,6 @@ spec:
         kubeaddons.mesosphere.io/name: kommander
   chartReference:
     chart: openldap
-    repo: https://vjone.github.io/se-addons
+    repo: https://kubernetes-charts.storage.googleapis.com
     version: 1.2.5
     
